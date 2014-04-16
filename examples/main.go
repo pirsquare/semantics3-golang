@@ -4,7 +4,7 @@ import (
     "fmt"
     "log"
     "io/ioutil"
-    "github.com/pirsquare/semantics3-go"
+    "github.com/pirsquare/semantics3-golang"
 )
 
 func main() {

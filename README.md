@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pirsquare/semantics3-golang.svg?branch=master)](https://travis-ci.org/pirsquare/semantics3-golang)
+
 Semantics3 api client in golang. 
 
 ### Example

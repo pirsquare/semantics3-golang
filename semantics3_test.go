@@ -31,7 +31,6 @@ func Test_AddParams(t *testing.T) {
 
 func Test_NewClient(t *testing.T) {
 	ret := NewClient("1", "2", "bags")
-	assert.Equal(t, ret.oauth, oauth.NewConsumer("1", "2", oauth.ServiceProvider{}))
 	assert.Equal(t, ret.endpoint, "bags")
 }
 

@@ -1,4 +1,4 @@
-# Semantics3 api client in golang. 
+# Semantics3 api client in golang.
 [![Build Status](https://travis-ci.org/pirsquare/semantics3-golang.svg?branch=master)](https://travis-ci.org/pirsquare/semantics3-golang)
 
 ## Installation
@@ -6,7 +6,7 @@
     go get github.com/pirsquare/semantics3-golang
 
 ## Examples
-<pre>
+```go
 package main
 
 import (
@@ -30,4 +30,4 @@ func main() {
 	fmt.Println(string(bits))
 }
 
-</pre>
+```

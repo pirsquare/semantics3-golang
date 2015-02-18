@@ -14,7 +14,9 @@ var mockExpected = make([]interface{}, 2)
 //==================================================
 type MockOAuthConsumer struct{}
 
-func (m MockOAuthConsumer) Get(string, map[string]string, *oauth.AccessToken) (*http.Response, error) {
+func (m MockOAuthConsumer) Get(string, map[string]string,
+	*oauth.AccessToken) (*http.Response, error) {
+
 	return nil, nil
 }
 
@@ -36,7 +38,9 @@ func Test_NewClient(t *testing.T) {
 
 type MockOAuthConsumer_2 struct{ MockOAuthConsumer }
 
-func (m MockOAuthConsumer_2) Get(baseURL string, params map[string]string, token *oauth.AccessToken) (*http.Response, error) {
+func (m MockOAuthConsumer_2) Get(baseURL string, params map[string]string,
+	token *oauth.AccessToken) (*http.Response, error) {
+
 	mockExpected[0] = baseURL
 	mockExpected[1] = params
 	return nil, nil
